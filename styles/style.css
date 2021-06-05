@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    font-family: Lato, sans-serif;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 black;
+}
+
+.label {
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+}
+
+.label:last-of-type {
+    margin-top: 20px;
+}
+
+.addForm, .todoForm, .completed {
+    padding: 10px 5px;
+}
+
+.todoForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.addForm input {
+    margin: 0 10px 10px 0;
+    padding: 10px 5px;
+}
+
+button {
+    padding: 10px 5px;
+    background: none;
+}
+
+button:first-child {
+    margin: 0 10px 0 0;
+}
+
+input, button {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        justify-content: center;
+    }
+}
